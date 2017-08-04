@@ -1,0 +1,50 @@
+extends: airbnb
+
+env:
+  es6: true
+  node: true
+
+#parser: "babel-eslint"
+
+# Modifications / extensions to airbnb styles
+rules:
+
+  # Increase max line length
+  max-len: ["error", 120, {"ignoreStrings": true, "ignoreTemplateLiterals": true}]
+  # Keep indent at 4
+  # function parameters should align with first parameter
+  # switch cases should use default indent
+  indent: ["error", 4, {
+    "FunctionDeclaration": {"parameters": "first"},
+    "SwitchCase": 1
+  }]
+
+  # Do not enforce dangling commas
+  comma-dangle: ["error", "only-multiline"]
+  # Allow block padding
+  padded-blocks: 0
+  # Allow usage of function declarations before they are defined
+  no-use-before-define: ["error", { "functions": false, "classes": true }]
+  # Do not enforce newline at end of file
+  eol-last: 0
+  # Do not enforce arrow functions for named functions
+  prefer-arrow-callback: ["error", { "allowNamedFunctions": true }]
+  # Do not enforce type safe equality
+  eqeqeq: 0
+  # Allow modification of parameter props
+  no-param-reassign: ["error", { "props": false }]
+  # Allow arrow functions without parens if there is only one parameter
+  arrow-parens: ["error", "as-needed"]
+  # Allow inner functions
+  no-inner-declarations: 0
+  # Allow mixing operators with same precedence, e.g. a + b - c
+  no-mixed-operators: ["error", {"allowSamePrecedence": true}]
+  # Require function names to force decision between arrow function or regular function
+  func-names: ["error", "always"]
+  # Allow usage of console
+  no-console: 0
+
+  # Allow usage of dev dependencies
+  import/no-extraneous-dependencies: ["error", {"devDependencies": true, "optionalDependencies": false, "peerDependencies": false}]
+  # Allow single named export
+  import/prefer-default-export: 0
