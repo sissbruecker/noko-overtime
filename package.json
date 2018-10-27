@@ -1,7 +1,7 @@
 {
   "name": "freckle-overtime",
-  "version": "0.1.0",
-  "description": "Freckle overtime calculator",
+  "version": "1.0.0",
+  "description": "Overtime calculation for letsfreckle.com",
   "main": "index.js",
   "bin": {
     "freckle-overtime": "index.js"
@@ -9,11 +9,11 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "/Users/Sascha/dev/projects/overtimer/"
+    "url": "https://github.com/sissbruecker/freckle-overtime"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Sascha Ißbrücker",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^2.0.1",
     "commander": "^2.11.0",
@@ -25,11 +25,5 @@
     "ramda": "^0.24.1",
     "request": "^2.88.0"
   },
-  "devDependencies": {
-    "eslint": "^4.3.0",
-    "eslint-config-airbnb": "^15.1.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.1.0"
-  }
+  "devDependencies": {}
 }
