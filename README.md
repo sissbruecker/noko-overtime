@@ -1,38 +1,34 @@
-# freckle-overtime
+# noko-overtime
 
-Node.js CLI tool for calculating overtime for [letsfreckle.com](https://letsfreckle.com/). 
+Node.js CLI tool for calculating overtime for [nokotime.com](https://nokotime.com/). 
 
-**NOTE:** Currently does not support selecting a user. This tool will only be beneficial to you if you are the sole person making entries in your freckle sub-domain.
+**NOTE:** Currently does not support selecting a user. This tool will only be beneficial to you if you are the sole person making entries in your Noko sub-domain.
 
 ## How to use
 
 To install:
 
-    npm install freckle-overtime -g
+    npm install noko-overtime -g
 
 To run the initial setup:
     
-    freckle-overtime configure
+    noko-overtime configure
     
 To calculate overtime:
 
-    freckle-overtime
+    noko-overtime
     
 For help:
   
-    freckle-overtime -h
-
-## Demo
-
-[![asciicast](https://asciinema.org/a/ghFixFUHhyowESNuONxUNPTS3.png)](https://asciinema.org/a/ghFixFUHhyowESNuONxUNPTS3)
+    noko-overtime -h
 
 ## FAQ
 
-**Where do I get my Freckle API authentication token?**
+**Where do I get my Noko API authentication token?**
 
-- Log in to your Freckle sub-domain
+- Log in to your Noko sub-domain
 - From the bar on the left select *Integrations & Apps*
-- Click the *Freckle API* tab
+- Click the *Noko API* tab
 - Click on the *Settings...* button next to *API v1 Token*
 - Click on *click to reveal* to get the token
 - Then copy/paste the token into the command line
